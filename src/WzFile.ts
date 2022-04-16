@@ -35,7 +35,7 @@ export class WzFile extends RandomLittleEndianAccessFile {
     }
 
     public children(): ReadonlyMap<string, WzData<any>> {
-        return this.root.children()
+        return this.root.children();
     }
 
     public readEncodedBytes(length: number): Buffer {
